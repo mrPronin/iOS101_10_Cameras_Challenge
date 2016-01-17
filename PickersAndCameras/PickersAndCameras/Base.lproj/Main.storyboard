@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickersAndCameras" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRW-B2-5OL">
+                                <rect key="frame" x="16" y="13" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="pickFromCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fOm-fA-ZS4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeK-Uh-Wcv">
+                                <rect key="frame" x="260" y="13" width="48" height="30"/>
+                                <state key="normal" title="Library"/>
+                                <connections>
+                                    <action selector="pickFromCameraRoll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aUf-nU-AS0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXb-cN-mEy">
+                                <rect key="frame" x="270" y="518" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oKm-zh-SB6"/>
+                                </connections>
+                            </button>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" image="6a0133f30ae399970b0192aa1b5afb970d-pi.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3ic-A4-RYa">
+                                <rect key="frame" x="16" y="51" width="288" height="459"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkk-mO-oy0">
+                                <rect key="frame" x="107" y="518" width="106" height="30"/>
+                                <state key="normal" title="Make Nostalgic"/>
+                                <connections>
+                                    <action selector="makeNostalgic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gFW-bn-bZU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="3ic-A4-RYa" secondAttribute="leading" id="4PV-hb-fdB"/>
+                            <constraint firstItem="Bkk-mO-oy0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K3M-e5-wia"/>
+                            <constraint firstItem="FeK-Uh-Wcv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-7" id="MMX-p4-xVm"/>
+                            <constraint firstItem="RRW-B2-5OL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-7" id="VVT-CP-PNd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3ic-A4-RYa" secondAttribute="trailing" id="cWE-Ie-7It"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3ic-A4-RYa" secondAttribute="bottom" constant="58" id="fZt-MU-jVL"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="RRW-B2-5OL" secondAttribute="leading" id="igb-pj-WaO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oXb-cN-mEy" secondAttribute="bottom" constant="20" id="kxf-Ay-ygJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FeK-Uh-Wcv" secondAttribute="trailing" constant="-4" id="l6F-zR-HG3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bkk-mO-oy0" secondAttribute="bottom" constant="20" id="qOP-sh-kSe"/>
+                            <constraint firstItem="3ic-A4-RYa" firstAttribute="top" secondItem="RRW-B2-5OL" secondAttribute="bottom" constant="8" id="uLd-ZF-75I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oXb-cN-mEy" secondAttribute="trailing" id="zhE-06-Csl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="3ic-A4-RYa" id="819-LJ-J84"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="422"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="6a0133f30ae399970b0192aa1b5afb970d-pi.jpg" width="366" height="406"/>
+    </resources>
+</document>
