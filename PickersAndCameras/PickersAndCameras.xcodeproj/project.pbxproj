@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D31A3BFD1B97784E00EFC5E8 /* Silly.png in Resources */ = {isa = PBXBuildFile; fileRef = D31A3BFC1B97784E00EFC5E8 /* Silly.png */; settings = {ASSET_TAGS = (); }; };
-		D31A3BFF1B977EA700EFC5E8 /* 6a0133f30ae399970b0192aa1b5afb970d-pi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D31A3BFE1B977EA700EFC5E8 /* 6a0133f30ae399970b0192aa1b5afb970d-pi.jpg */; settings = {ASSET_TAGS = (); }; };
+		D31A3BFD1B97784E00EFC5E8 /* Silly.png in Resources */ = {isa = PBXBuildFile; fileRef = D31A3BFC1B97784E00EFC5E8 /* Silly.png */; };
+		D31A3BFF1B977EA700EFC5E8 /* 6a0133f30ae399970b0192aa1b5afb970d-pi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D31A3BFE1B977EA700EFC5E8 /* 6a0133f30ae399970b0192aa1b5afb970d-pi.jpg */; };
 		D3E3792C1B963F4A00246ECD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3792B1B963F4A00246ECD /* AppDelegate.swift */; };
 		D3E3792E1B963F4A00246ECD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3792D1B963F4A00246ECD /* ViewController.swift */; };
 		D3E379311B963F4A00246ECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E3792F1B963F4A00246ECD /* Main.storyboard */; };
@@ -101,6 +101,7 @@
 				TargetAttributes = {
 					D3E379271B963F4A00246ECD = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = L952KSTMA9;
 					};
 				};
 			};
@@ -256,6 +257,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PickersAndCameras/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -268,6 +270,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PickersAndCameras/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
